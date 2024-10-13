@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/TeX,macOS
 # Edit at https://www.toptal.com/developers/gitignore?templates=TeX,macOS
 
+
+*.pdf
+
 ### macOS ###
 # General
 .DS_Store
@@ -8,7 +11,8 @@
 .LSOverride
 
 # Icon must end with two 
-Icon
+Icon
+
 
 # Thumbnails
 ._*
