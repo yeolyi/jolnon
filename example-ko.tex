@@ -9,8 +9,8 @@
 
 \addbibresource{bib.bib}
 
-\title{키보드 접근성 강화를 통한 학부 홈페이지의 UX 개선}
-\titlealt{Improving UX of Undergraduate Department Websites through Enhanced Keyboard Accessibility}
+\title{접근성 강화를 통한 학부 홈페이지의 UX 개선}
+\titlealt{Improving UX of Undergraduate Department Websites through Enhanced Accessibility}
 \author{이성열}
 \advisor{서진욱}
 \date{2024년 12월 13일}
@@ -19,13 +19,12 @@
 \koreankeywords{웹 접근성, 웹 접근성 평가, 장애인, WCAG, 대학 홈페이지}
 \englishkeywords{Web Accessibility, Web Accessibility Testing, Disabled People, WCAG, University website}
 
-
 \begin{document}
 \maketitle
 
 \pagenumbering{roman}
 \begin{abstract}
-다양한 인터렉션이 적극적으로 사용됨에 따라 모던 웹사이트는 점점 복잡해지고 있다. 이로인해 접근성을 준수한 웹 개발은 까다로워지고 있지만 접근성 준수의 필요성은 점점 강조되고있다. 컴퓨터공학부 홈페이지는 외부에서 학부와 연결되는 공적인 수단이기에 접근성에 대한 고려가 중요하다. 따라서 본 연구에서는 학부 홈페이지의 웹 접근성을 개선하고자한다. 다양한 장애 환경중에서도 포인팅 장치를 사용할 수 없는 운동장애 사용자들을 타겟으로 키보드만으로도 모든 정보의 접근 및 조작이 가능하도록 개선하고자한다. 이러한 개선 사항을 기록함으로서 추후 시각장애나 청각장애 사용자의 접근성 개선을 위한 자료로서 활용할 수 있을 것이다. 
+다양한 인터렉션이 적극적으로 사용됨에 따라 모던 웹사이트는 점점 복잡해지고 있다. 이로인해 접근성을 준수한 웹 개발은 까다로워지고 있지만 접근성 준수의 필요성은 점점 강조되고있다. 컴퓨터공학부 홈페이지는 외부에서 학부와 연결되는 공적인 수단이기에 접근성에 대한 고려가 중요하다. 따라서 본 연구에서는 학부 홈페이지의 웹 접근성을 개선하고자한다. 다양한 장애 환경중에서도 포인팅 장치를 사용할 수 없는 운동장애 사용자들을 타겟으로 키보드만으로도 모든 정보의 접근 및 조작이 가능하도록 개선하고자한다. 이러한 개선 사항을 기록함으로서 추후 청각장애나 인지장애 사용자의 접근성 개선을 위한 자료로서 활용할 수 있을 것이다. 
 \end{abstract}
 
 \tableofcontents
@@ -39,36 +38,29 @@
 
 \section{웹 접근성 현황}
 
+2023년 등록장애인 264만 2,000명, 전체 인구 대비 5.1\% https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1481120&act=view
+
+웹페이지는 갈수록 복잡해지고 접근성 준수도 잘 이루어지고 있지 않다. https://webaim.org/projects/million/
+
 \section{학부 홈페이지의 웹 접근성 평가}
+
+구글 유입이 많은 두 페이지와 홈페이지에 대해 평가 후 개선.
+
+Lighthouse, Wave https://wave.webaim.org/. 
 
 \section{웹 접근성 개선 방향}
 
+접근성 개선하다보면 UX도 좋아진다. 우선 운동 장애 관련된 접근성을 개선해보자. 
+
+한국 웹접근성 인증 평가원에서는 웹 접근성 준수 고려사항을 시각, 이동성, 청각, 인지 4가지로 나눈다. 이중에서도 본 연구에서는 시각과 이동성에 집중하고자 한다. 학부 홈페이지에 아직 영상, 음성 콘텐츠가 있지 않기 때문이다. 
+
 \chapter{본론}\label{chap:body}
 
-% 정보 엔트로피는 각 메시지에 포함된 정보의 기댓값으로 식~\eqref{eq:entropy}\와 같다~\cite{6773024}.
+\section{메인 화면 개선}
 
-\section{그림}\label{sec:picture}
-그림 예시는 그림~\ref{fig:example}\와 같다. 그림~\ref{fig:snu}\은 서울대학교 로고이고 그림~\ref{fig:eng}\는 서울대학교 공과대학 로고이다.
+\section{연구실 목록 페이지 개선}
 
-\begin{figure}[htp]
-  \centering
-  \begin{subfigure}[b]{0.5\textwidth}
-    \centering
-    \includegraphics[width=0.5\textwidth]{logo1.pdf}
-    \bicaption{서울대학교 로고}{The logo of Seoul National University}\label{fig:snu}
-  \end{subfigure}%
-  \begin{subfigure}[b]{0.5\textwidth}
-    \centering
-    \includegraphics[width=0.9\textwidth]{logo2.pdf}
-    \bicaption{공과대학 로고}{The logo of College of Engineering}\label{fig:eng}
-  \end{subfigure}
-  \bicaption[그림 예시 (목차 항목)]{그림 예시.}{An example of a figure.}\label{fig:example}
-\end{figure}
-
-
-
-% 표 예시는 표~\ref{tab:example}\과 같다.\footnote{\jiwon[12]}
-
+\section{교수진 페이지 개선}
 
 \chapter{결론}\label{chap:conclusion}
 
@@ -80,3 +72,25 @@
   영문 초록 작성 예정
 \end{abstract}
 \end{document}
+
+% 정보 엔트로피는 각 메시지에 포함된 정보의 기댓값으로 식~\eqref{eq:entropy}\와 같다~\cite{6773024}.
+
+% \section{그림}\label{sec:picture}
+% 그림 예시는 그림~\ref{fig:example}\와 같다. 그림~\ref{fig:snu}\은 서울대학교 로고이고 그림~\ref{fig:eng}\는 서울대학교 공과대학 로고이다.
+
+% \begin{figure}[htp]
+%   \centering
+%   \begin{subfigure}[b]{0.5\textwidth}
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{logo1.pdf}
+%     \bicaption{서울대학교 로고}{The logo of Seoul National University}\label{fig:snu}
+%   \end{subfigure}%
+%   \begin{subfigure}[b]{0.5\textwidth}
+%     \centering
+%     \includegraphics[width=0.9\textwidth]{logo2.pdf}
+%     \bicaption{공과대학 로고}{The logo of College of Engineering}\label{fig:eng}
+%   \end{subfigure}
+%   \bicaption[그림 예시 (목차 항목)]{그림 예시.}{An example of a figure.}\label{fig:example}
+% \end{figure}
+
+% 표 예시는 표~\ref{tab:example}\과 같다.\footnote{\jiwon[12]}
